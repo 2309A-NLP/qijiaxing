@@ -1,0 +1,192 @@
+{
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/config.py": {
+    "mtime": 1778760535.5422153,
+    "ast_hash": "34ef7805b4214ba142ee06d360987553",
+    "semantic_hash": "34ef7805b4214ba142ee06d360987553"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/.codegraph/codegraph.json": {
+    "mtime": 1779677970.6072402,
+    "ast_hash": "ddf097f493bdb586db395fa62d367b8d",
+    "semantic_hash": "ddf097f493bdb586db395fa62d367b8d"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/check_imports.py": {
+    "mtime": 1778760831.6464763,
+    "ast_hash": "dfee66ddaadebbc873268d22e88d6589",
+    "semantic_hash": "dfee66ddaadebbc873268d22e88d6589"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/config.py": {
+    "mtime": 1778760575.0543134,
+    "ast_hash": "058d0ecc9da79d33c800c8dea04fdf8a",
+    "semantic_hash": "058d0ecc9da79d33c800c8dea04fdf8a"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/dependencies.py": {
+    "mtime": 1778760673.8792944,
+    "ast_hash": "5bce08aaafee838163971e0b10f7011e",
+    "semantic_hash": "5bce08aaafee838163971e0b10f7011e"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/exceptions.py": {
+    "mtime": 1778592337.4381835,
+    "ast_hash": "fb4a8643f622278e8436faacdc04de8b",
+    "semantic_hash": "fb4a8643f622278e8436faacdc04de8b"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/main.py": {
+    "mtime": 1778760607.4525554,
+    "ast_hash": "1f3a651d8e3b834d17ad244aeec5784d",
+    "semantic_hash": "1f3a651d8e3b834d17ad244aeec5784d"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/__init__.py": {
+    "mtime": 1778154263.0709748,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/api/__init__.py": {
+    "mtime": 1778154278.757325,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/api/v1/chat.py": {
+    "mtime": 1779430548.2669442,
+    "ast_hash": "8e68e5f9b19bca550137c073deeab721",
+    "semantic_hash": "8e68e5f9b19bca550137c073deeab721"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/api/v1/__init__.py": {
+    "mtime": 1778154279.6675017,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/core/bm25_retriever.py": {
+    "mtime": 1778760207.5159638,
+    "ast_hash": "2ac1c842a30650a021a673b3d2bd9301",
+    "semantic_hash": "2ac1c842a30650a021a673b3d2bd9301"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/core/embedding_service.py": {
+    "mtime": 1778760382.1355338,
+    "ast_hash": "951fc3538f265217fcbb4715cdb1a5d0",
+    "semantic_hash": "951fc3538f265217fcbb4715cdb1a5d0"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/core/llm_client.py": {
+    "mtime": 1779671727.244286,
+    "ast_hash": "480b1eef572e32f69d5e6f8f70654345",
+    "semantic_hash": "480b1eef572e32f69d5e6f8f70654345"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/core/llm_router.py": {
+    "mtime": 1779429845.0381217,
+    "ast_hash": "023a3b9ac25348240a4998ef9a09d5fc",
+    "semantic_hash": "023a3b9ac25348240a4998ef9a09d5fc"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/core/query_understanding.py": {
+    "mtime": 1778760456.754002,
+    "ast_hash": "18772ee289cd276583b2aea39a03736d",
+    "semantic_hash": "18772ee289cd276583b2aea39a03736d"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/core/reranker.py": {
+    "mtime": 1778759487.7255864,
+    "ast_hash": "738e007776b9213669184e248ab669e0",
+    "semantic_hash": "738e007776b9213669184e248ab669e0"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/core/retrieval.py": {
+    "mtime": 1779430456.6654532,
+    "ast_hash": "be27b9082ef53b2b61d53a1b3d68f701",
+    "semantic_hash": "be27b9082ef53b2b61d53a1b3d68f701"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/core/__init__.py": {
+    "mtime": 1778154281.0785904,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/db/milvus_client.py": {
+    "mtime": 1778760771.1582413,
+    "ast_hash": "789bc09ea28b7c050844b24122e17d73",
+    "semantic_hash": "789bc09ea28b7c050844b24122e17d73"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/db/redis_client.py": {
+    "mtime": 1778760803.3948243,
+    "ast_hash": "88afdbf8fcdb568b6742763af583324f",
+    "semantic_hash": "88afdbf8fcdb568b6742763af583324f"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/db/__init__.py": {
+    "mtime": 1778154281.3009832,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/middleware/logging_middleware.py": {
+    "mtime": 1778760707.2040017,
+    "ast_hash": "598157eb378e6c61b438e0acc491ccf6",
+    "semantic_hash": "598157eb378e6c61b438e0acc491ccf6"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/middleware/rate_limit.py": {
+    "mtime": 1778760736.074296,
+    "ast_hash": "cdea1a628a8c323f7bc41e9c5c0084e8",
+    "semantic_hash": "cdea1a628a8c323f7bc41e9c5c0084e8"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/backend/app/middleware/__init__.py": {
+    "mtime": 1778154277.8494833,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/data/parsed/\u62db\u80a1\u8bf4\u660e\u4e66_\u539f\u59cb\u6587\u672c.json": {
+    "mtime": 1778586774.0678203,
+    "ast_hash": "4325b62d8a228aa4bf5fee813ba76ef8",
+    "semantic_hash": "4325b62d8a228aa4bf5fee813ba76ef8"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/data/parsed/\u62db\u80a1\u8bf4\u660e\u4e66_\u539f\u59cb\u6587\u672c_\u5907\u4efd_20260506_170737.json": {
+    "mtime": 1778058285.7509906,
+    "ast_hash": "f441d737bee44b482c81a0120c54eacd",
+    "semantic_hash": "f441d737bee44b482c81a0120c54eacd"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/data/parsed/\u62db\u80a1\u8bf4\u660e\u4e66_\u539f\u59cb\u6587\u672c_\u5907\u4efd_20260507_152142.json": {
+    "mtime": 1778586774.0712278,
+    "ast_hash": "f441d737bee44b482c81a0120c54eacd",
+    "semantic_hash": "f441d737bee44b482c81a0120c54eacd"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/offline/chunk_text.py": {
+    "mtime": 1778759342.2427495,
+    "ast_hash": "4b42fa646b6f9c9862fdfd737ee31a61",
+    "semantic_hash": "4b42fa646b6f9c9862fdfd737ee31a61"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/offline/generate_embeddings.py": {
+    "mtime": 1778760340.035297,
+    "ast_hash": "981cbc2657a5b16509f05fb33a0d5171",
+    "semantic_hash": "981cbc2657a5b16509f05fb33a0d5171"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/offline/import_to_milvus.py": {
+    "mtime": 1778760301.155929,
+    "ast_hash": "fa3807620b69aacb1c5d09d0c0adf629",
+    "semantic_hash": "fa3807620b69aacb1c5d09d0c0adf629"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/offline/parse_pdf.py": {
+    "mtime": 1778758822.4231708,
+    "ast_hash": "dcb7a3a521717b0c38feb3241ed425e8",
+    "semantic_hash": "dcb7a3a521717b0c38feb3241ed425e8"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/offline/data/parsed/\u62db\u80a1\u8bf4\u660e\u4e66_\u539f\u59cb\u6587\u672c.json": {
+    "mtime": 1778058089.5485642,
+    "ast_hash": "f441d737bee44b482c81a0120c54eacd",
+    "semantic_hash": "f441d737bee44b482c81a0120c54eacd"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/offline/data/parsed/\u62db\u80a1\u8bf4\u660e\u4e66_\u539f\u59cb\u6587\u672c_\u5907\u4efd_20260506_170127.json": {
+    "mtime": 1778058006.386067,
+    "ast_hash": "f441d737bee44b482c81a0120c54eacd",
+    "semantic_hash": "f441d737bee44b482c81a0120c54eacd"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/scripts/deploy_sglang_ubuntu.sh": {
+    "mtime": 1778586774.1058052,
+    "ast_hash": "e1368c006cdf71581b2ede831e3dd01c",
+    "semantic_hash": "e1368c006cdf71581b2ede831e3dd01c"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/scripts/export_model.sh": {
+    "mtime": 1778586774.1082876,
+    "ast_hash": "fdbfb6ee6c1b967167250204f40e0b5f",
+    "semantic_hash": "fdbfb6ee6c1b967167250204f40e0b5f"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/scripts/install_cuda_ubuntu.sh": {
+    "mtime": 1778586774.109315,
+    "ast_hash": "b913c580fe73718159a84f3ee0fced75",
+    "semantic_hash": "b913c580fe73718159a84f3ee0fced75"
+  },
+  "/mnt/c/Users/qjx/Desktop/github/\u9879\u76ee\u4e8c/scripts/start_webui.sh": {
+    "mtime": 1778586774.1108894,
+    "ast_hash": "1420a91c75c09ffec32a64c62193954f",
+    "semantic_hash": "1420a91c75c09ffec32a64c62193954f"
+  }
+}

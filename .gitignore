@@ -1,0 +1,14 @@
+*.jpg 
+*.png 
+*.pdf 
+*.pptx 
+*.pyc 
+pycache/ 
+*.log 
+pycache/ 
+*.safetensors 
+*.bin 
+*.pth 
+*.pt 
+*.onnx 
+实训一工单/项目二 ---- 工单11_备份_20260604_154541/backend/offline/finetuned-bge-base-zh-v1.5-lora/* 

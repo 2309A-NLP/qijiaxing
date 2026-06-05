@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>项目二 知识图谱</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#1a1a2e;color:#eee;overflow:hidden;height:100vh;}
+#title{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:10;background:rgba(26,26,46,0.9);padding:8px 20px;border-radius:20px;border:1px solid rgba(255,255,255,0.1);font-size:14px;pointer-events:none;}
+#stats{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:10;background:rgba(26,26,46,0.8);padding:6px 16px;border-radius:12px;font-size:12px;color:#888;}
+#legend{position:fixed;top:70px;right:16px;z-index:10;font-size:11px;color:#aaa;background:rgba(26,26,46,0.85);padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);max-height:80vh;overflow-y:auto;}
+#legend .com{margin:2px 0;cursor:pointer;color:#ccc;}
+.node-label{font-size:10px;pointer-events:none;user-select:none;opacity:0.7;}
+</style>
+</head>
+<body>
+<div id="title">&#x1f4ca; 项目二 · 知识图谱</div>
+<div id="stats">加载中...</div>
+<div id="legend"><b>社区</b><br><span id="legend-content"></span></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+/*GRAPH_DATA_PLACEHOLDER*/
+(function() {
+var nodes = GRAPH_DATA.nodes.map(function(n) {
+    return {id: n.id, name: n.l, type: n.t, community: n.c, file: n.f, group: n.c};
+});
+var links = GRAPH_DATA.links.map(function(l) {
+    return {source: l.s, target: l.t};
+}).filter(function(l) {
+    return nodes.some(function(n) { return n.id === l.source; }) && nodes.some(function(n) { return n.id === l.target; });
+});
+var width = window.innerWidth, height = window.innerHeight;
+var colors = d3.scaleOrdinal(d3.schemeSet3);
+var svg = d3.select("body").append("svg")
+    .attr("width",width).attr("height",height)
+    .style("position","fixed").style("top",0).style("left",0);
+var g = svg.append("g");
+svg.call(d3.zoom().scaleExtent([0.05,5]).on("zoom",function(e){g.attr("transform",e.transform);}));
+var sim = d3.forceSimulation(nodes)
+    .force("link",d3.forceLink(links).id(function(d){return d.id;}).distance(60))
+    .force("charge",d3.forceManyBody().strength(-80))
+    .force("center",d3.forceCenter(width/2,height/2));
+var link = g.append("g").selectAll("line").data(links).join("line")
+    .attr("stroke","rgba(255,255,255,0.06)").attr("stroke-width",0.5);
+var node = g.append("g").selectAll("g").data(nodes).join("g")
+    .call(d3.drag()
+        .on("start",function(e,d){if(!e.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
+        .on("drag",function(e,d){d.fx=e.x;d.fy=e.y;})
+        .on("end",function(e,d){if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+node.append("circle")
+    .attr("r",function(d){return Math.max(2,Math.min(12,links.filter(function(l){return l.source.id===d.id||l.target.id===d.id;}).length*0.5+2));})
+    .attr("fill",function(d){return colors(d.community);})
+    .attr("stroke","rgba(255,255,255,0.2)").attr("stroke-width",0.5);
+node.append("text").attr("class","node-label").attr("dx",8).attr("dy",3)
+    .text(function(d){return d.name.length>20?d.name.slice(0,18)+"...":d.name;}).attr("fill","#ccc");
+node.append("title").text(function(d){return d.name+"\n类型: "+d.type+"\n文件: "+d.file+"\n社区: "+d.community;});
+sim.on("tick",function(){
+    link.attr("x1",function(d){return d.source.x;}).attr("y1",function(d){return d.source.y;})
+        .attr("x2",function(d){return d.target.x;}).attr("y2",function(d){return d.target.y;});
+    node.attr("transform",function(d){return"translate("+d.x+","+d.y+")";});
+});
+var coms={};nodes.forEach(function(n){coms[n.community]=(coms[n.community]||0)+1;});
+var sorted=Object.entries(coms).sort(function(a,b){return b[1]-a[1];});
+document.getElementById("stats").textContent=nodes.length+" 节点 | "+links.length+" 连接 | "+sorted.length+" 社区 | 滚轮缩放 · 拖拽移动";
+var legHtml="";
+sorted.forEach(function(item){legHtml+="<div class='com' style='color:"+colors(parseInt(item[0]))+"'>● 社区"+item[0]+" ("+item[1]+")</div>";});
+document.getElementById("legend-content").innerHTML=legHtml;
+})();
+</script>
+</body>
+</html>
